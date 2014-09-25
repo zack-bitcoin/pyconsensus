@@ -12,6 +12,6 @@ install:
   - "pip install -r requirements.txt"
   - "pip install -r test_requirements.txt"
 script:
-  - py.test test/runtests.py --doctest-modules -v --cov skunkworks --cov-report term-missing
+  - py.test test --doctest-modules -v --cov pyconsensus --cov-report term-missing
 after_success:
   - coveralls

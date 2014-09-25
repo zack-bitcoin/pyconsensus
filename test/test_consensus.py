@@ -19,7 +19,7 @@ else:
 HERE = os.path.dirname(os.path.realpath(__file__))
 sys.path.insert(0, os.path.join(HERE, os.pardir))
 
-import consensus
+import pyconsensus as consensus
 
 def prp(o):
     print(json.dumps(outcome, indent=3, sort_keys=True))
@@ -58,7 +58,7 @@ class TestConsensus(unittest.TestCase):
         # DisplayResults(Factory(VotesL))
         pass
 
-    def test_long_term_evolution(self, X, N=2, ThisRep=-1):
+    def test_long_term_evolution(self):
         #Repeats factory process N times
         # if type(ThisRep) is int:
         #     ThisRep = DemocracyCoin(X)      
