@@ -5,17 +5,17 @@ except ImportError:
     from distutils.core import setup
 
 setup(
-    name="grapple",
-    version="0.2.2",
-    description="Ripple ledger extractor",
+    name="pyconsensus",
+    version="0.1",
+    description="Consensus mechanism for Truthcoin",
     author="Jack Peterson",
-    author_email="<jack@tinybike.net>",
+    author_email="<jack@dyffy.com>",
     maintainer="Jack Peterson",
-    maintainer_email="<jack@tinybike.net>",
-    license="MIT",
-    url="https://github.com/tensorjack/grapple",
-    download_url = "https://github.com/tensorjack/grapple/tarball/0.2.2",
-    packages=["grapple"],
-    install_requires=["psycopg2", "websocket-client", "numpy", "pandas"],
-    keywords = ["ripple", "rippled", "ledger", "download", "data"]
+    maintainer_email="<jack@dyffy.com>",
+    license="GPL",
+    url="https://github.com/tensorjack/pyconsensus",
+    download_url = "https://github.com/tensorjack/pyconsensus/tarball/0.1",
+    packages=["pyconsensus"],
+    install_requires=["numpy"],
+    keywords = ["consensus", "truthcoin", "svd", "oracle"]
 )

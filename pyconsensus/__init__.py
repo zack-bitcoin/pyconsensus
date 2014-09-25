@@ -24,7 +24,7 @@ from numpy.linalg import *
 from .custommath import *
 
 __title__      = "pyconsensus"
-__version__    = "0.0.1"
+__version__    = "0.1"
 __author__     = "Paul Sztorc and Jack Peterson"
 __license__    = "GPL"
 __maintainer__ = "Jack Peterson"
