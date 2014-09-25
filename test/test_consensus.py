@@ -12,7 +12,10 @@ import json
 import numpy as np
 import numpy.ma as ma
 if platform.python_version() < "2.7":
-    unittest = __import__("unittest2")
+    try:
+        unittest = __import__("unittest2")
+    except:
+        import unittest
 else:
     import unittest
 
