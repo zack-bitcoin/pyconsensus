@@ -191,7 +191,7 @@ def FillNa(Mna, ScaledIndex, Rep=-1, CatchP=.1, Verbose=False):
         # Decision Outcome -
         # Our best guess for the Decision state (FALSE=0, Ambiguous=.5, TRUE=1)
         # so far (ie, using the present, non-missing, values).
-        DecisionOutcomes_Raw = GetDecisionOutcomes(Mna, ScaledIndex, Rep, Verbose)
+        DecisionOutcomes_Raw = GetDecisionOutcomes(Mna, ScaledIndex, Rep, Verbose).squeeze()
 
         # Fill in the predictions to the original M
         NAmat = Mna.mask  # Defines the slice of the matrix which needs to be edited.

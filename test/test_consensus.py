@@ -28,7 +28,7 @@ class TestConsensus(unittest.TestCase):
 
     def setUp(self):
         self.votes_unmasked = np.array([
-            [1, 1, 0, 0],
+            [1, 1, 0, np.nan],
             [1, 0, 0, 0],
             [1, 1, 0, 0],
             [1, 1, 1, 0],
