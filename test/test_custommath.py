@@ -11,10 +11,7 @@ import platform
 import numpy as np
 import numpy.ma as ma
 if platform.python_version() < "2.7":
-    try:
-        unittest = __import__("unittest2")
-    except:
-        import unittest
+    unittest = __import__("unittest2")
 else:
     import unittest
 
